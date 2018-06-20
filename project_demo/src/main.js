@@ -11,8 +11,8 @@ import store from "./store"
 Vue.use(VueAwesomeSwiper)
 Vue.prototype.$axios = Axios
 
-Vue.prototype.HOST='/api'
-
+/*Vue.prototype.HOST='/api'*/
+Axios.defaults.baseURL = "/api/"
 Axios.interceptors.request.use(function(config){
 	console.log(config)
 	if(config.method == "post"){

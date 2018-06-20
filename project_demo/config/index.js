@@ -11,13 +11,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        "/api":{
-            target:"http://localhost:8082/springcloud",
+       /* "/api":{
+            target:"http://www.hellofyy.top:8082/springcloud",
             changeOrigin: true,
             pathRewrite:{
                 '^/api':''
             }
-        }
+        }*/
     },
 
     // Various Dev Server settings

@@ -165,10 +165,12 @@ export default{
 		}
 	},
 	created(){
-		var url = this.HOST+"/getNews"
+		
+		var url = "/getNews"
 		this.$axios(url)
 		.then(res => {
 			this.news = res.data;
+			console.log(this.news)
 		})
 		.catch(rep => {
 			console.log(rep)
